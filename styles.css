@@ -1,0 +1,74 @@
+ html {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    width: 100%;
+}
+
+#container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+    
+img {
+  height: 92px;
+  aspect-ratio: auto 272 / 92;
+}
+
+.main-logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.nav a {
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.nav .navigation-button {
+  -webkit-appearance: none;
+  background-color: #1a73e8;
+  border: 1px solid transparent;
+  color: #FFF;
+  padding: 5px 20px;
+  border-radius:5px;
+  margin-right: 0px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 20% auto;
+}
+
+main .main-content {
+  flex: 1;
+}
+
+.material-icons-outlined{
+  font-family: 'Material Icons' !important;
+}
+
+.additional-info {
+  display: flex;
+}
+
+.additional-info a {
+  color: #70757a;
+}
