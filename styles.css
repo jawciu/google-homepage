@@ -33,8 +33,8 @@ img {
 }
 
 .nav a, .nav span, .nav button {
- text-decoration: none;
- padding: 10px;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .navigation-apps {
@@ -149,8 +149,8 @@ main .main-content {
   align-items: center;
 }
 
-
 .additional-info a {
+  text-decoration: none;
   padding: 15px;
   color: #70757a;
 }
