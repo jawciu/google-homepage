@@ -25,19 +25,28 @@ img {
     width: auto;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  margin: 20px 0px;
-}
-
 .nav {
-  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px;
+  padding: 0 15px;
 }
 
-.nav a {
-  text-decoration: none;
-  margin-left: 24px;
+.nav a, .nav span, .nav button {
+ text-decoration: none;
+ padding: 10px;
+}
+
+.navigation-apps {
+  font-family: 'Material Icons' !important;
+  font-size: 24px;
+  color: #70757a;
+  margin: 0 10px 0 0;
+}
+
+.navigation-apps:hover {
+  border-radius: 50px;
+  background-color: #f3f3f3;
 }
 
 .nav .navigation-button {
@@ -45,9 +54,13 @@ img {
   background-color: #1a73e8;
   border: 1px solid transparent;
   color: #FFF;
-  padding: 5px 20px;
+  padding: 9px 24px;
   border-radius:5px;
-  margin-right: 0px;
+}
+
+.nav .navigation-button:hover {
+  background-color: #2b7de9;
+  box-shadow: 0 1px 3px 1px rgba(37, 105, 231, 0.5);
 }
 
 a:hover {
@@ -81,7 +94,7 @@ main .main-content {
   outline: none;
 }
 
-.material-icons-outlined{
+.search-icon {
   font-family: 'Material Icons' !important;
   position: relative;
   right: 5px;
@@ -127,12 +140,15 @@ main .main-content {
 .left-side {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .right-side {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
+
 
 .additional-info a {
   padding: 15px;
