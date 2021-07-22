@@ -1,33 +1,33 @@
- html {
+html {
     font-size: 14px;
     font-family: Arial, sans-serif;
     color: #222;
-    width: 100%;
 }
+ 
+/* PAGE LAYOUT */
 
 #container {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-}
-    
-img {
-  height: 92px;
-  aspect-ratio: auto 272 / 92;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column; 
 }
 
-.main-logo {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    width: auto;
+.main {
+  flex-grow: 1;
 }
+
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+}
+
+ /* Navbar*/
 
 .nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: 60px;
   padding: 0 15px;
 }
@@ -58,7 +58,7 @@ img {
   border-radius:5px;
 }
 
-.nav .navigation-button:hover {
+.navigation-button:hover {
   background-color: #2b7de9;
   box-shadow: 0 1px 3px 1px rgba(37, 105, 231, 0.5);
 }
@@ -67,11 +67,13 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Main */
+
 main .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+  flex: 1fr;
 }
 
 .search-form {
@@ -79,6 +81,7 @@ main .main-content {
   border: 0.2px solid rgb(221, 221, 221);
   border-radius: 50px;
   margin: 25px;
+  display: flex;
 }
 
 .search-form:hover {
@@ -129,11 +132,13 @@ main .main-content {
   box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer */
+
 .additional-info {
   padding: 0 20px;
   background-color:rgb(240, 240, 240);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
 }
 
@@ -151,6 +156,42 @@ main .main-content {
 
 .additional-info a {
   text-decoration: none;
-  padding: 15px;
+  padding: 3%;
   color: #70757a;
+}
+
+.additional-info a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 550px) {
+
+  .nav a, .nav span, .nav .navigation-button {
+    padding: 2%;
+  } 
+  .nav {
+      padding: 0 2%;
+  }
+
+  .search-input {
+    width: 200px;
+  }
+
+  .additional-info {
+   display: flex;
+   flex-direction: column;
+   height: 60px;
+  }
+
+  .additional-info .left-side, .additional-info .right-side {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .additional-info a {
+    padding: 1%;
+  }
 }
