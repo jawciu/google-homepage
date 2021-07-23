@@ -1,2 +1,1 @@
-This is my first project from theodinproject course.
-I'm trying to recreate a google homepage. 
+This is the first project from The Odin Project curriculum and my first project where I am not following a tutorial. The task was to mimic the Google homepage. I've tried using flex-bow and css grid and make the design responsive. I'm pretty sure that there is a lot of 'not the best practice' solutions but it looks like google and it respond so I'll take it for now. I've learned that using pixels isn't great for resposive websites and media query so I'm going to watch some tutorials and try to get the hang of rems and ems for my future projects. 
